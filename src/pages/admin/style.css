@@ -1,0 +1,128 @@
+* {
+    margin: 0px;
+}
+
+.mainn {
+    display: flex;
+}
+
+.sidenav {
+    width: 17%;
+    display: flex;
+    flex-direction: column;
+    /* background-color: #01549d3d; */
+    z-index: 1;
+    position: relative;
+    /* color: white; */
+    /* text-align: center; */
+    margin-top: -5px;
+    height: 800px;
+    justify-content: space-evenly;
+    /* border-radius: 40px 0px 0 40px; */
+    box-shadow: 0 0rem 1rem rgba(0, 0, 0, .15) !important;
+
+}
+
+
+
+.sidenav a {
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    font-size: 45px;
+    width: 100px;
+    margin-left: 20px;
+
+
+}
+
+.sidenav .dashboard {
+    background-color: #ffcc66;
+    width: 100%;
+    display: block;
+    align-items: center;
+    margin-bottom: 20px;
+    border-radius: 0 40px 0 40px;
+}
+
+.sidenav .profile {
+    transition: 0.4s ease-in-out;
+    margin-bottom: 20px;
+}
+
+.sidenav .profile:hover {
+    background-color: #ffcc66;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+    width: 100%;
+    border: 1px solid #ddd;
+    padding-left: 15px;
+    overflow: scroll;
+    height: 10vh;
+    /* Set the desired height, e.g., 50% of the viewport height */
+}
+
+th,
+td {
+    text-align: left;
+    padding: 8px;
+    width: 150px;
+    white-space: nowrap;
+    padding-left: 25px;
+}
+
+.main tr:nth-child(even) {
+    background-color: #ffcc66;
+}
+
+.main {
+    overflow-x: auto;
+    width: 100%;
+    margin-top: -5px;
+    height: 105vh;
+    /* Set the desired height, e.g., 50% of the viewport height */
+}
+
+@media only screen and (max-width: 992px) {
+    .mainn {
+        margin-top: 106px;
+    }
+
+    .sidenav .logoo {
+        display: none;
+    }
+
+    .sidenav {
+        width: 40%;
+        margin-top: 0;
+        border-radius: 0;
+        justify-content: center;
+    }
+
+    .sidenav a {
+        font-size: 24px;
+        width: 100%;
+        margin: 0;
+        text-align: center;
+    }
+
+    .sidenav .dashboard {
+        border-radius: 0;
+    }
+
+    table {
+        width: 100%;
+    }
+
+    th,
+    td {
+        width: auto;
+    }
+
+    .main {
+        height: auto;
+        margin-top: 0;
+    }
+}

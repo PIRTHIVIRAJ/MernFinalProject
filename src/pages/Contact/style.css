@@ -1,0 +1,205 @@
+.contact {
+    display: flex;
+    justify-content: space-evenly;
+    height: 800px;
+    margin-top: 13%;
+}
+
+.contact .pic {
+    height: 400px;
+    margin-top: 5%;
+}
+
+.custom-container {
+    background: #fff;
+    width: 800px;
+    padding: 25px 40px 10px 40px;
+
+}
+
+.custom-container .custom-text {
+    text-align: center;
+    font-size: 55px;
+    font-weight: 600;
+    color: #3BB77E;
+}
+
+.custom-container form {
+    padding: 30px 0 0 0;
+}
+
+.custom-container form .custom-form-row {
+    display: flex;
+    margin: 32px 0;
+    align-items: center;
+}
+
+form .custom-form-row .custom-input-data {
+    width: 100%;
+    height: 40px;
+    margin: 0 20px;
+    position: relative;
+}
+
+form .custom-form-row .custom-textarea {
+    height: 70px;
+}
+
+.custom-input-data input,
+.custom-textarea textarea {
+    display: block;
+    width: 100%;
+    height: 100%;
+    border: none;
+    font-size: 25px;
+    border-bottom: 2px solid rgba(0, 0, 0, 0.12);
+}
+
+.custom-input-data input:focus~label,
+.custom-textarea textarea:focus~label,
+.custom-input-data input:valid~label,
+.custom-textarea textarea:valid~label {
+    transform: translateY(-20px);
+    font-size: 24px;
+    color: #01539D;
+}
+
+.custom-textarea textarea {
+    resize: none;
+    padding-top: 10px;
+}
+
+.custom-input-data label {
+    position: absolute;
+    pointer-events: none;
+    bottom: 10px;
+    font-size: 20px;
+    transition: all 0.3s ease;
+}
+
+.custom-textarea label {
+    width: 100%;
+    bottom: 40px;
+    background: #fff;
+}
+
+.custom-input-data .custom-underline {
+    position: absolute;
+    bottom: 0;
+    height: 2px;
+    width: 100%;
+}
+
+.custom-input-data .custom-underline:before {
+    position: absolute;
+    content: "";
+    height: 2px;
+    width: 100%;
+    background: #01539D;
+    transform: scaleX(0);
+    transform-origin: center;
+    transition: transform 0.3s ease;
+}
+
+.custom-input-data input:focus~.custom-underline:before,
+.custom-input-data input:valid~.custom-underline:before,
+.custom-textarea textarea:focus~.custom-underline:before,
+.custom-textarea textarea:valid~.custom-underline:before {
+    transform: scale(1);
+}
+
+.custom-submit-btn .custom-input-data {
+    overflow: hidden;
+    height: 45px !important;
+    width: 25% !important;
+}
+
+.custom-submit-btn .custom-input-data .custom-inner {
+    height: 100%;
+    width: 300%;
+    position: absolute;
+    left: -100%;
+    background: #3BB77E;
+    transition: all 0.4s;
+}
+
+.custom-submit-btn .custom-input-data:hover .custom-inner {
+    left: 0;
+}
+
+.custom-submit-btn .custom-input-data input {
+    background: none;
+    border: none;
+    color: #fff;
+    font-size: 17px;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    cursor: pointer;
+    position: relative;
+    z-index: 2;
+}
+
+@media only screen and (max-width: 952px) {
+    .contact {
+        flex-direction: column;
+        height: auto;
+        margin-top: 10%;
+    }
+
+    .contact .pic {
+        height: 450px;
+        /* Adjust the height as needed */
+        margin-top: 5%;
+    }
+
+    .custom-container {
+        width: 100%;
+        padding: 25px 20px 10px 20px;
+    }
+
+    .custom-container .custom-text {
+        font-size: 40px;
+    }
+
+    .custom-container form {
+        padding: 20px;
+        margin-bottom: 150px;
+        /* Adjust padding as needed */
+    }
+
+    .custom-container form .custom-form-row {
+        flex-direction: column;
+        margin: 20px 0;
+    }
+
+    form .custom-form-row .custom-input-data {
+        width: 100%;
+        margin-bottom: 30px;
+    }
+
+    .custom-input-data .custom-underline,
+    .custom-textarea .custom-underline {
+        bottom: 5px;
+    }
+
+    .custom-input-data .custom-underline:before,
+    .custom-textarea .custom-underline:before {
+        bottom: 0;
+    }
+
+    .custom-textarea label {
+        bottom: 20px;
+    }
+
+    .custom-submit-btn .custom-input-data {
+        width: 80% !important;
+        height: 50px;
+        display: flex;
+        text-align: center;
+    }
+
+    .custom-input-data .custom-underline:before {
+        background: none;
+    }
+}

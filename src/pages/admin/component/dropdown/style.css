@@ -1,0 +1,22 @@
+select {
+    word-wrap: normal;
+    border: none;
+    padding: 9px;
+    font-size: 17px;
+}
+
+option {
+    font-size: 22px;
+}
+
+.Pending {
+    background-color: red;
+}
+
+.Completed {
+    background-color: #3bb77d;
+}
+
+.Processeing {
+    background-color: #ffcc66;
+}
